@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="proyecto_api.principal">
+    <ScrollView>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Image Source="incio1.jpg" Grid.Row="0"/>
+
+            <Image Source="fondo1.jpg" Grid.Row="1"/>
+
+            <Button ImageSource="logo1.png" BackgroundColor="Transparent" Grid.Row="0" HorizontalOptions="Center"
+                        TranslationY="130" HeightRequest="180" x:Name="btnmenuadministrador"
+                    Clicked="btnmenuadministrador_Clicked" />
+            
+            <Label Text="LOS 3 ELEFANTES" TextColor="#ffffff" FontSize = "40" FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center" Grid.Row="1" TranslationY="94"/>
+            
+            <Label Text="LOS 3 ELEFANTES" TextColor="#000000" FontSize = "40" FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center" Grid.Row="1" TranslationY="90"/>
+            
+            <Label Text="Bueno, Bonito Y Barato!!" Grid.Row="1" TextColor="#E5007D" FontSize = "20"
+                   FontAttributes="Bold" TranslationY="170" TranslationX="118"/>
+            
+            <Label Text="Bueno, Bonito Y Barato!! &#129303;" Grid.Row="1" TextColor="#000000" FontSize = "20"
+                   FontAttributes="Bold"  HorizontalTextAlignment="Center" TranslationY="170"/>
+            
+            <Button  x:Name="btninicio" Clicked="btninicio_Clicked" Text="Bienvenidos &#128075;"
+                     Margin="110" TranslationY="390" BackgroundColor="#FDADC4"
+                     BorderColor="#ffffff" BorderWidth="3" CornerRadius="25" FontSize = "20"/>
+        </Grid>
+
+    </ScrollView>
+    
+</ContentPage>

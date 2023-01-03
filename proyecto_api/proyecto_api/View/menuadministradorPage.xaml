@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="proyecto_api.menuadministrador">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="3" ColumnSpacing="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="menu_admin.jpg" Grid.RowSpan="8" Grid.ColumnSpan="2"/>
+                <Label Text="&#128079; BIENVENIDO ADMINISTRADOR &#129346;" TextColor="#000000"
+                       FontSize = "25" FontAttributes="Bold"  HorizontalTextAlignment="Center"
+                       Grid.Row="0" Grid.ColumnSpan="2"/>
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="1" Grid.Column="0"
+                            BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"
+                            ImageSource="hogar.png" x:Name="btnadminhogar"
+                            Clicked="btnadminhogar_Clicked" />
+                <Label Text="H" Grid.Row="1" Grid.Column="0" TranslationY="2" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="O" Grid.Row="1" Grid.Column="0" TranslationY="25" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="G" Grid.Row="1" Grid.Column="0" TranslationY="48" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="A" Grid.Row="1" Grid.Column="0" TranslationY="70" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="R" Grid.Row="1" Grid.Column="0" TranslationY="93" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold" />
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="1" Grid.Column="1"
+                         BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"
+                        ImageSource="bebe.png" x:Name="btnadminproductosbebe"
+                       Clicked="btnadminproductosbebe_Clicked"/>
+                <Label Text="B" Grid.Row="1" Grid.Column="1" TranslationY="15" TranslationX="195"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="E" Grid.Row="1" Grid.Column="1" TranslationY="38" TranslationX="195"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="B" Grid.Row="1" Grid.Column="1" TranslationY="61" TranslationX="195"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="E" Grid.Row="1" Grid.Column="1" TranslationY="84" TranslationX="195"
+                       FontSize = "25" FontAttributes="Bold"/>
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="2" Grid.RowSpan="2" Grid.Column="0"
+                        BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"
+                        x:Name="btnadminproductospapeleria" Clicked="btnadminproductospapeleria_Clicked"/>
+                <Image Source="papeleria.png" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="PAPELERIA" Grid.Row="3" Grid.Column="0" FontSize = "25" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"
+                         BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"  ImageSource="ropa.png"
+                        x:Name="btnadminropa" Clicked="btnadminbtnadminropa_Clicked"/>
+                <Label Text="R" Grid.Row="2" Grid.Column="1" TranslationY="30" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="O" Grid.Row="2" Grid.Column="1" TranslationY="53" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="P" Grid.Row="2" Grid.Column="1" TranslationY="76" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+                <Label Text="A" Grid.Row="2" Grid.Column="1" TranslationY="99" TranslationX="210"
+                       FontSize = "25" FontAttributes="Bold"/>
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="4" Grid.RowSpan="2" Grid.Column="0"
+                        BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"
+                        x:Name="btnadmincosmeticos" Clicked="btnadmincosmeticos_Clicked"/>
+                <Image Source="cosmeticos.png" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="COSMETICOS" Grid.Row="5" Grid.Column="0" FontSize = "25" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                <Button BackgroundColor="#FED5E1" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1"
+                        BorderColor="#E5007D" BorderWidth="1" CornerRadius="40"
+                        x:Name="btnadminproductosnavidad" Clicked="btnadminproductosnavidad_Clicked"/>
+                <Image Source="navidad.png" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="NAVIDAD" Grid.Row="5" Grid.Column="1" FontSize = "25" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Button x:Name="btnagregar" Clicked="btnagregar_Clicked" BorderColor="#E5007D" BorderWidth="1"
+                        BackgroundColor="#FED5E1" CornerRadius="30" FontSize = "30"
+                        Text="AGREGAR PRODUCTOS" Grid.Row="6" Grid.ColumnSpan="2"
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <BoxView BackgroundColor="Transparent" Grid.Row="7" Grid.ColumnSpan="2"/>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,124 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FubarCoder.RestSharp.Portable.HttpClient" Version="4.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\admincosmeticosPage.xaml.cs">
+      <DependentUpon>admincosmeticosPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\adminproductosbebePage.xaml.cs">
+      <DependentUpon>adminproductosbebePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\adminproductoshogarPage.xaml.cs">
+      <DependentUpon>adminproductoshogarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\adminproductosnavidadPage.xaml.cs">
+      <DependentUpon>adminproductosnavidadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\adminproductospapeleriaPage.xaml.cs">
+      <DependentUpon>adminproductospapeleriaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\adminropaPage.xaml.cs">
+      <DependentUpon>adminropaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\bebePage.xaml.cs">
+      <DependentUpon>bebePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\cosmeticoPage.xaml.cs">
+      <DependentUpon>cosmeticoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\hogarPage.xaml.cs">
+      <DependentUpon>hogarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\inicioPage.xaml.cs">
+      <DependentUpon>inicioPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\menuadministradorPage.xaml.cs">
+      <DependentUpon>menuadministradorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\navidadPage.xaml.cs">
+      <DependentUpon>navidadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\papeleriaPage.xaml.cs">
+      <DependentUpon>papeleriaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\principalPage.xaml.cs">
+      <DependentUpon>principalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\promocionesPage.xaml.cs">
+      <DependentUpon>promocionesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\ropaPage.xaml.cs">
+      <DependentUpon>ropaPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="admincosmeticos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="adminproductosbebe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="adminproductoshogar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="adminproductosnavidad.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="adminproductospapeleria.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="adminropa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="bebe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="cosmetico.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="hogar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="inicio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="menuadministrador.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="navidad.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="papeleria.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="principal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="promociones.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ropa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\agregarproductosPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

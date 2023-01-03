@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="proyecto_api.promociones">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="5" ColumnSpacing="5">                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="ofertas.png" Aspect="AspectFill" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+                <Image Source="oferta1.png" Grid.Row="0" Grid.Column="0"/>
+                <Image Source="oferta2.png"  Grid.Row="0" Grid.Column="1"/>
+                <Image Source="oferta3.png"  Grid.Row="1" Grid.Column="0"/>
+                <Image Source="oferta4.png"  Grid.Row="1" Grid.Column="1"/>
+                <Image Source="oferta5.png"  Grid.Row="2" Grid.Column="0"/>
+                <Image Source="oferta6.png" Grid.Row="2" Grid.Column="1"/>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

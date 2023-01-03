@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="proyecto_api.View.agregarproductosPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="0" BackgroundColor="#FDDDE6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0">
+                    <StackLayout>
+
+                    <Label Text="Tenga en cuenta que los departamentos estan identificados de la siguiente manera"
+                       TextColor="#000000" FontSize = "20" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                        
+                        <Label Text=" &#128124; 1 - Departamento de productos para bebe &#129528; "
+                       HorizontalTextAlignment="Center" TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+                        
+                        <Label Text=" 	&#128132; 2 - Departamento de cosmeticos &#128133;"  HorizontalTextAlignment="Center"
+                       TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+                        
+                        <Label Text=" &#128444; 3 - Departamento de productos de hogar &#129681;"  HorizontalTextAlignment="Center"
+                       TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+
+                        <Label Text=" &#9731; 4 - Departamento de productos de navidad &#127876;" HorizontalTextAlignment="Center"
+                       TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+
+                        <Label Text=" 	&#128211; 5 - Departamento de papeleria &#128396;" HorizontalTextAlignment="Center"
+                       TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+                        
+                        <Label Text="&#128085; 6 - Departamento de ropa 	&#128087;"  HorizontalTextAlignment="Center"
+                       TextColor="#000000" FontSize = "15" FontAttributes="Bold"/>
+                        </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="Black" Grid.Row="1" HorizontalOptions="Center" WidthRequest="350">
+
+
+                    <StackLayout>
+                        <Label Text="NOMBRE DEL PRODUCTO" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                                  TextColor="#000000"/>
+
+                        <Entry Placeholder="digite el nombre" FontSize="15" x:Name="nombre_producto"/>
+
+                        <Label Text="VALOR DEL PRODUCTO" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                                   TextColor="#000000"/>
+
+                        <Entry Placeholder="digite el valor del producto" FontSize="15" x:Name="valor_producto"/>
+
+                        <Label Text="IMAGEN DEL PRODUCTO" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                                   TextColor="#000000"/>
+
+                        <Entry Placeholder="digite nombre de la imagen y extencion" FontSize="15" x:Name="foto_producto"/>
+
+                        <Label Text="DEPARTAMENTO DEL PRODUCTO" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                                  TextColor="#000000"/>
+
+                        <Entry Placeholder="digite numero del departamento" FontSize="15" x:Name="id_departamento"/>
+
+                        <Button Text="GUARDAR" FontSize="15" TextColor="White" x:Name="btnguardar"
+                                BackgroundColor="#EB008B" Clicked="btnguardar_Clicked"/>
+
+                    </StackLayout>
+                </Frame>
+                <BoxView BackgroundColor="Transparent" Grid.Row="2"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

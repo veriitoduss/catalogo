@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="proyecto_api.adminropa">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#FDDDE6">
+            <Grid RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <ListView x:Name="listaradminropa" Grid.Column="0" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <ViewCell  >
+                                <Frame BackgroundColor="Transparent" CornerRadius="60" BorderColor="#E5007D">
+                                    <StackLayout >
+                                        <Image Source="{Binding foto_producto}" Grid.ColumnSpan="2"/>
+                                        <Label Text="{Binding nombre_producto}" FontAttributes="Bold"
+                                           HorizontalTextAlignment="Center" FontSize = "25" BackgroundColor="#E5007D" />
+                                        <Label Text="{Binding valor_producto}" FontAttributes="Bold"
+                                           HorizontalTextAlignment="Center" FontSize = "25" BackgroundColor="#E5007D"/>
+                                    </StackLayout>
+                                </Frame>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView x:Name="listaradminropa1" Grid.Column="1" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <ViewCell  >
+                                <Frame BackgroundColor="Transparent" CornerRadius="60" BorderColor="#E5007D">
+                                    <StackLayout >
+                                        <Image Source="{Binding foto_producto}" />
+                                        <Label Text="{Binding nombre_producto}" FontAttributes="Bold"
+                                           HorizontalTextAlignment="Center" FontSize = "25" BackgroundColor="#E5007D"/>
+                                        <Label Text="{Binding valor_producto}" FontAttributes="Bold"
+                                           HorizontalTextAlignment="Center" FontSize = "25" BackgroundColor="#E5007D"/>
+                                    </StackLayout>
+                                </Frame>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
